@@ -1,25 +1,36 @@
-document.addEventListener('DOMContentLoaded', init, false);
-function init() {
-  if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('/PWATestProject/TEMP/js/service-worker.js')
-      .then((reg) => {
-        console.log('Service worker registered -->', reg);
+// document.addEventListener('DOMContentLoaded', init, false);
+// function init() {
+  
+// }
 
-        //online event btn
-        btnEvt();
+// function btnEvt() {
+  
+// }
 
-      }, (err) => {
-        console.error('Service worker not registered -->', err);
-      });
-  }
+// if ('serviceWorker' in navigator) {
+//   navigator.serviceWorker.register('/PWATestProject/TEMP/js/service-worker.js')
+//     .then((reg) => {
+//       console.log('Service worker registered -->', reg);
+
+//       //online event btn
+//       btnEvt();
+
+//     }, (err) => {
+//       console.error('Service worker not registered -->', err);
+//     });
+// }
+
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker
+    .register('/PWATestProject/TEMP/js/service-worker.js')
+    .then(() => { console.log('Service Worker Registered'); });
 }
 
-function btnEvt() {
-  let deferredPrompt;
-  const addBtn = document.querySelector('.add-button');
-  addBtn.style.display = 'none';
+let deferredPrompt;
+const addBtn = document.querySelector('.add-button');
+addBtn.style.display = 'none';
 
-  window.addEventListener('beforeinstallprompt', (e) => {
+window.addEventListener('beforeinstallprompt', (e) => {
     // Prevent Chrome 67 and earlier from automatically showing the prompt
     e.preventDefault();
     // Stash the event so it can be triggered later.
@@ -42,6 +53,5 @@ function btnEvt() {
         deferredPrompt = null;
       });
     });
-  });
-}
+});
 
