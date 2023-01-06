@@ -1,25 +1,15 @@
 {
-    "name": "숨고",
-    "short_name": "숨고",
-    "icons": [{
-      "src": "https://d1hhkexwnh74v.cloudfront.net/app_icons/1x.png",
-      "type": "image/png",
-      "sizes": "48x48"
-    }, {
-      "src": "https://d1hhkexwnh74v.cloudfront.net/app_icons/2x.png",
-      "type": "image/png",
-      "sizes": "64x64"
-    }, {
+  "background_color": "purple",
+  "description": "Shows random fox pictures. Hey, at least it isn't cats.",
+  "display": "fullscreen",
+  "icons": [
+    {
       "src": "https://d1hhkexwnh74v.cloudfront.net/app_icons/3x.png",
-      "type": "image/png",
-      "sizes": "128x128"
-    }, {
-      "src": "https://d1hhkexwnh74v.cloudfront.net/app_icons/3x.png",
-      "type": "image/png",
-      "sizes": "144x144"
-    }],
-    "start_url": "/",
-    "display": "fullscreen",
-    "background_color": "#FFFFFF",
-    "theme_color": "#00C7AE"
-  }
+      "sizes": "144x144",
+      "type": "image/png"
+    }
+  ],
+  "name": "Awesome fox pictures",
+  "short_name": "Foxes",
+  "start_url": "/PWATestProject/TEMP/index.html"
+}
