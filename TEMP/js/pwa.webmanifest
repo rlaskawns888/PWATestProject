@@ -4,8 +4,8 @@
   "display": "fullscreen",
   "icons": [
     {
-      "src": "https://d1hhkexwnh74v.cloudfront.net/app_icons/3x.png",
-      "sizes": "144x144",
+      "src": "https://raw.githubusercontent.com/mdn/pwa-examples/main/a2hs/icon/fox-icon.png",
+      "sizes": "192x192",
       "type": "image/png"
     }
   ],
