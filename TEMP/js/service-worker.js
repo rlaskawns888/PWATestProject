@@ -49,6 +49,7 @@ self.addEventListener('install', (e) => {
       '/PWATestProject/TEMP/index.html',
       '/PWATestProject/TEMP/js/pwa.js',
       '/PWATestProject/TEMP/js/status.js',
+      '/PWATestProject/TEMP/img/fox-icon.png',
     ])),
   );
 });
