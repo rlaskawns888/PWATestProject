@@ -22,7 +22,7 @@
 
 if ('serviceWorker' in navigator) {
   navigator.serviceWorker
-      .register('/PWATestProject/TEMP/js/service-worker.js')
+      .register('/PWATestProject/TEMP/service-worker.js')
       .then(() => { console.log('Service Worker Registered'); });
 }
 
