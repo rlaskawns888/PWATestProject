@@ -1,8 +1,9 @@
 const CACHE_NAME = 'sw-cache-example2';
 const toCache = [
   '/',
-  '/index.html',
-  '/public/js/status.js',
+  '/js/pwa.js',
+  '/js/status.js',
+  '/images/fox-icon.png',
 ];
 
 self.addEventListener('install', function(event) {
@@ -43,29 +44,20 @@ self.addEventListener('activate', function(event) {
 })
 
 // self.addEventListener('install', (e) => {
-//     e.waitUntil(
-//       caches.open('fox-store').then((cache) => cache.addAll([
-//         // '/pwa-examples/a2hs/',
-//         // '/pwa-examples/a2hs/index.html',
-//         // '/pwa-examples/a2hs/index.js',
-//         // '/pwa-examples/a2hs/style.css',
-//         // '/pwa-examples/a2hs/images/fox1.jpg',
-//         // '/pwa-examples/a2hs/images/fox2.jpg',
-//         // '/pwa-examples/a2hs/images/fox3.jpg',
-//         // '/pwa-examples/a2hs/images/fox4.jpg',
-//         // 'PWATestProject/views/index.html',
-//         // 'PWATestProject/js/public/status.js'
-//             '/',
-//             '/index.html',
-//             '/public/js/status.js',
-//       ])),
-//     );
-//   });
-  
-//   self.addEventListener('fetch', (e) => {
-//     console.log(e.request.url);
-//     e.respondWith(
-//       caches.match(e.request).then((response) => response || fetch(e.request)),
-//     );
-//   });
+//   e.waitUntil(
+//     caches.open('fox-store').then((cache) => cache.addAll([
+//       '/',
+//       '/js/pwa.js',
+//       '/js/status.js',
+//       '/imgages/fox-icon.png',
+//     ])),
+//   );
+// });
+
+// self.addEventListener('fetch', (e) => {
+//   console.log(e.request.url);
+//   e.respondWith(
+//     caches.match(e.request).then((response) => response || fetch(e.request)),
+//   );
+// });
   

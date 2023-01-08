@@ -47,7 +47,7 @@ self.addEventListener('install', (e) => {
     caches.open('fox-store').then((cache) => cache.addAll([
       '/PWATestProject/TEMP/',
       '/PWATestProject/TEMP/index.html',
-      '/PWATestProject/TEMP/pwa.js', 
+      '/PWATestProject/TEMP/pwa.js', <!
       '/PWATestProject/TEMP/js/status.js',
       '/PWATestProject/TEMP/img/fox-icon.png',
     ])),
